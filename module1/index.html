@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lunch Checker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .display_img {
+        position: absolute;
+        top:50%;
+        left:50%;
+        
+        transform:translate(-50%,-50%);
+    }
+    </style>
 </head>
 
 <body >
     <center>
-    <div class="container" ng-controller="LCController">
+    <div class="container display-img" ng-controller="LCController">
         <h2 style = "color: rgb(20, 20, 20)" text-align = "center">Lunch Checker</h2>
         <div class="form-group">
             <input id="lunch-menu" width = "50%" type="text" placeholder="Enter the food items you wish to have!" class="form-control" ng-model="dishes">
