@@ -6,32 +6,34 @@
     <title>Lunch Checker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
-        .display_img {
-        position: absolute;
-        top:50%;
-        left:50%;
-        
-        transform:translate(-50%,-50%);
-    }
+        .centering {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
-<body >
+<body>
     <center>
-    <div class="container display-img" ng-controller="LCController">
-        <h2 style = "color: rgb(20, 20, 20)" text-align = "center">Lunch Checker</h2>
-        <div class="form-group">
-            <input id="lunch-menu" width = "50%" type="text" placeholder="Enter the food items you wish to have!" class="form-control" ng-model="dishes">
-        </div>
-        <div class="form-group">
-            <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
-        </div>
-        <div ng-show="!empty && checked" class="alert alert-success">{{message}}</div>
-        <div ng-show="empty" class="alert alert-danger">Enter some data first of all :)</div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-    <script src="app.js"></script>
-    <center>
+        <div class="centering">
+            <div class="container" ng-controller="LCController">
+                <h2 style="color: rgb(20, 20, 20)" text-align="center">Lunch Checker</h2>
+                <div class="form-group">
+                    <input id="lunch-menu" width="50%" type="text" placeholder="Enter the food items you wish to have!"
+                        class="form-control" ng-model="dishes">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
+                </div>
+                <div ng-show="!empty && checked" class="alert alert-success">{{message}}</div>
+                <div ng-show="empty" class="alert alert-danger">Enter some data first of all :)</div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+            <script src="app.js"></script>
+            <div>
+                <center>
 </body>
 
 </html>
