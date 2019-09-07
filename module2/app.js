@@ -34,7 +34,7 @@
             { name: "Sandwitch", quantity: 10 },
             { name: "Soda", quantity: 10 },
             { name: "Cheesecakes", quantity: 2 },
-            { name: "Butterscotch", quantity: 18 }
+            { name: "Butterskotch", quantity: 18 }
         ];
         var alreadyBoughtItems = [];
 
