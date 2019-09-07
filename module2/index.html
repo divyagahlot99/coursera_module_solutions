@@ -30,8 +30,8 @@
 <body>
     <div class="container">
         <h1 style = "text-align: center; color: green; margin-top: 100px;">Shopping List Check Off</h1>
-        <div class="row">
-            <div class="col-md-6" style = "margin-left: 10%;" ng-controller="ToBuyController as toBuyList">
+        <div class="row" style = "margin-left: 20%;">
+            <div class="col-md-6"  ng-controller="ToBuyController as toBuyList">
                 <h1 style = "color: blue;">To Buy:</h1>
                 <ul>
                     <li ng-repeat="item in toBuyList.items">Buy {{item.quantity}} {{item.name}}
@@ -40,7 +40,7 @@
                 </ul>
                 <div ng-if="toBuyList.items.length == 0" class="emptyMessage">Everything is bought!</div>
             </div>
-            <div class="col-md-6" style = "margin-left: 10%;" ng-controller="AlreadyBoughtController as alreadyBoughtList">
+            <div class="col-md-6" ng-controller="AlreadyBoughtController as alreadyBoughtList">
                 <h1 style = "color: blue;">Already Bought:</h1>
                 <ul>
                     <li ng-repeat="item in alreadyBoughtList.items">Bought {{item.quantity}} {{item.name}}</li>
